@@ -11,6 +11,6 @@ url = "http://" + parser.parse_args().ip + ":" + parser.parse_args().port + "/pe
 r = requests.get(url)
 
 if r.status_code == requests.codes.ok:
-  print("OK")
+  print("OK" , end=" ")
   
-print(r.text)
+print(r.text , end="")

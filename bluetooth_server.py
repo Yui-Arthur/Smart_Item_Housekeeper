@@ -12,7 +12,6 @@ def data_received(data):
     sendSound([6,0,6,0])
     subprocess.Popen(["python" , "./FaceRecognize_yolov5_Facenet_svm/logIn_usr.py" , "--root" , "./FaceRecognize_yolov5_Facenet_svm" , "--label" , data , "--num" , "4"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     
-    
 
 s = BluetoothServer(data_received)
 sendSound([6,0,6,0])

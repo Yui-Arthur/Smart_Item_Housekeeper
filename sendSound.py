@@ -23,4 +23,6 @@ def sendSound(order , filePath=None):
 		ser.write(data)
 		time.sleep(0.01)
 		
+	ser.close()
+		
 		
